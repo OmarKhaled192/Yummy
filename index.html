@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yummy</title>
+    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/animate.min.css">
+    <link rel="stylesheet" href="./css/loading.css">
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+
+  <body>
+    <div class="loading">
+      <div class="lds-default">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+    <nav>
+      <section class="toggle">
+        <section class="logo">
+          <img src="./images/logo.png" alt="logo">
+        </section>
+        <section class="toggle-icon">
+          <i class="fa-solid open-close-icon fa-2x fa-align-justify"></i>
+          <i class="fa-solid open-close-icon fa-2x fa-x d-none"></i>
+        </section>
+        <section class="shareIcons">
+          <i class="fa-solid fa-globe d-block"></i>
+          <i class="fa-solid fa-share-nodes"></i>
+        </section>
+      </section>
+      <menu>
+        <ul class="links">
+          <li id="search">
+            Search
+          </li>
+          <li id="cats">
+            Categories
+          </li>
+          <li id="areas">
+            Area
+          </li>
+          <li id="ings">
+            Ingredients
+          </li>
+          <li id="contact">
+            Contact Us
+          </li>
+        </ul>
+        <footer>
+          <div class="socials">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-solid fa-globe"></i>
+          </div>
+          <div class="copyRights">
+            Copyright &copy; 2019 All Rights <br>
+            Reserved.
+          </div>
+        </footer>
+      </menu>
+    </nav>
+
+    <main>
+      <div class="cats"></div>
+      <div class="areas"></div>
+      <div class="ings"></div>
+      <div class="contacts"></div>
+      <div class="filters d-none">
+        <div class="form-group d-flex justify-content-between align-content-center gap-3 px-3 w-75 mx-auto">
+          <input type="text" class="form-control text-white bg-transparent" placeholder="Search By Name" name="mealName"
+            id="nameMeal">
+          <input type="text" class="form-control text-white bg-transparent" placeholder="Search By First Letter"
+            name="mealFChar" id="charMeal">
+        </div>
+      </div>
+      <div class="meals row"></div>
+      <div class="meal-details d-none">
+        <div class="row">
+          <div class="col-12 col-md-3">
+            <img src="./images/meal.jpg" alt="meal" id="prodImg">
+            <h2 id="strMeal">Beef Caldereta</h2>
+          </div>
+          <div class="col-12 col-md-9">
+            <h2>Instructions</h2>
+            <p id="strInstructions">0. Heat oil in a cooking pot. Saute onion and garlic until onion softens 1. Add
+              beef. Saute until the outer part turns light brown. 2. Add soy sauce. Pour tomato sauce and water. Let
+              boil. 3. Add Knorr Beef Cube. Cover the pressure cooker. Cook for 30 minutes. 4. Pan-fry carrot and potato
+              until it browns. Set aside. 5. Add chili pepper, liver spread and peanut butter. Stir. 6. Add bell
+              peppers, fried potato and carrot. Cover the pot. Continue cooking for 5 to 7 minutes. 7. Season with salt
+              and ground black pepper. Serve.</p>
+            <h2>Area : <span id="strArea">Filipino</span></h2>
+            <h2>Category : <span id="strCategory">Beef</span></h2>
+            <h2>Recipes :</h2>
+            <div class="ripes"></div>
+            <h2>Tags :</h2>
+            <div id="allTags">
+            </div>
+            <div class="btns py-5">
+              <a class="btn btn-success" id="src">Source</a>
+              <a class="btn btn-danger" id="ylink">Youtube</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="contact my-5 py-5 d-none">
+        <form method="post" class="w-100 d-flex justify-content-center align-items-center flex-column gap-2 my-5 py-5">
+          <div class="form-group w-75 d-flex justify-content-between gap-2">
+            <input type="text" class="form-control" id="userName" placeholder="Enter Your Name">
+            <input type="text" class="form-control" id="email" placeholder="Enter Your Email">
+          </div>
+          <div class="form-group w-75 d-flex justify-content-between gap-2">
+            <p class="form-control alert alert-danger p-2 d-none" id="errName">Special characters and numbers not
+              allowed</p>
+            <p class="form-control alert alert-danger p-2 d-none" id="errEmail">Email not valid *exemple@yyy.zzz</p>
+          </div>
+
+          <div class="form-group w-75 d-flex justify-content-between gap-2">
+            <input type="text" class="form-control" id="phone" placeholder="Enter Your Phone">
+            <input type="text" class="form-control" id="age" placeholder="Enter Your Age">
+          </div>
+          <div class="form-group w-75 d-flex justify-content-between gap-2">
+            <p class="form-control alert alert-danger p-2 d-none" id="errPhone">Enter valid Phone Number</p>
+            <p class="form-control alert alert-danger p-2 d-none" id="errAge">Enter valid age</p>
+          </div>
+
+          <div class="form-group w-75 d-flex justify-content-between gap-2">
+            <input type="text" class="form-control" id="password" placeholder="Enter Your Password">
+            <input type="text" class="form-control" id="repassword" placeholder="Repassword">
+          </div>
+          <div class="form-group w-75 d-flex justify-content-between gap-2">
+            <p class="form-control alert alert-danger p-2 d-none" id="errPass">Enter valid password *Minimum eight
+              characters, at least one letter and one number:*</p>
+            <p class="form-control alert alert-danger p-2 d-none" id="errRePass">Enter valid repassword</p>
+          </div>
+
+          <button class="btn btn-outline-danger py-2 my-2" id="submit" disabled>Submit</button>
+        </form>
+      </div>
+    </main>
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/code.jquery.com_jquery-3.7.0.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+
+</html>

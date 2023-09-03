@@ -1,0 +1,193 @@
+:root {
+    --main-back: #0d0d0d
+}
+
+body {
+    background-color: var(--main-back);
+    overflow-x: hidden;
+}
+
+nav .toggle {
+    background-color: #fff;
+    position: fixed;
+    width: 75px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    /* left: 300px; */
+    left: 0;
+    z-index: 9999;
+}
+
+nav .logo img {
+    width: 50px;
+}
+
+nav .toggle {
+    cursor: pointer;
+}
+
+menu {
+    background-color: var(--main-back);
+    width: 300px;
+    height: 100%;
+    position: fixed;
+    left: -300px;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    padding-block: 20px;
+    align-items: left;
+    flex-direction: column;
+    z-index: 9999;
+}
+
+menu>* {
+    color: #fff;
+}
+
+menu ul {
+    list-style: none;
+    margin: 0;
+    padding-top: 0;
+
+}
+
+menu ul li {
+    padding: 5px 0;
+    color: #fff;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+main {
+    margin-left: 75px;
+}
+
+main .cats,
+main .areas, 
+main .ings {
+    display: flex;
+    justify-content: left;
+    text-align: center;
+    flex-wrap: wrap;
+    padding-top: 20px;
+    padding-left: 50px;
+}
+
+main .cats .cat {
+    flex-basis: 23%;
+    color: #000;
+    position: relative;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+main .cats .cat .desc {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8));
+    
+    top: 100%;
+    transition: 0.3s;
+}
+
+main .cats .cat img {
+    width: 90%;
+    height: 90%;
+}
+main .cats .cat:hover .desc {
+    top: 0;
+    transition: 0.3s;
+}
+
+main .areas .area {
+    color: #fff;
+    width: 24%;
+} 
+main .areas .area p {
+    font-size: 30px;
+}
+main .areas .area {
+    cursor: pointer;
+}
+main .ings .ing {
+    color: #fff;
+    width: 24%;
+    cursor: pointer;
+}
+main .meals {
+    padding: 20px;
+    display: flex;
+    overflow: hidden;
+    justify-content: flex-start;
+}
+main .meals .meal {
+    position: relative;
+    width: 22%;
+    cursor: pointer;
+    overflow: hidden;
+    margin-block: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+main .meals .meal img {
+    width: 90%;
+    border-radius: 20px;
+}
+main .meals .meal p {
+    width: 85%;
+    height: 100%;
+    border: 20px solid transparent;
+    border-radius: 20px;
+    background-image: linear-gradient(0deg, rgba(255,255,255,0.8), rgba(255, 255, 255, 0.8));
+    position: absolute;
+    top: 100%;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+}
+main .meals .meal:hover p {
+    top: 0;
+    transition: 0.5s;
+}
+
+.alert {
+    text-align: center;
+}
+
+main .meal-details {
+    margin: 20px;
+    color: #fff;
+}
+
+main .meal-details .row img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+main .meal-details .row .ripes span {
+    display: inline-block;
+    padding: 2px 6px;
+    background-color: #cff4fc;
+    color: #000;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+main .meal-details .row h2 {
+    margin-block: 20px;
+}
+
