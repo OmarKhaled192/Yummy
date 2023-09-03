@@ -247,6 +247,7 @@ async function showDetailsOfMeal(pId) {
   addRipes(meal);
 
   // add all tags
+  $("#allTags").html(null);
   if (meal.strTags)
     meal.strTags.split(",").forEach((m) => {
       $("#allTags").append(
@@ -263,6 +264,7 @@ async function showDetailsOfMeal(pId) {
 }
 
 function addRipes(m) {
+  $(".ripes").html(null);
   if (m.strIngredient1)
     $(".ripes").append(`<span>${m.strMeasure1} ${m.strIngredient1}</span>`);
   if (m.strIngredient2)
